@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="#" class="form">
+            <div class="container">
+                <div class="header">
+                    <input type="text" placeholder="Название" class="
+                        header__input
+                        name">
+                    <input type="number" placeholder="Стоимость"
+                        class="header__input
+                        money">
+                    <form action="#" method="POST">
+                        <select class="header__form" name="form_select">
+                            <option selected="true" disabled="disabled"
+                                value="1">Категории:</option>
+                            <option value="2">Курсы</option>
+                            <option value="3">Проекты</option>
+                            <option value="4">Работа</option>
+                            <option value="5">Недвижимость</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="main">
+                    <h1 class="main__title">Описание</h1>
+                    <div class="setting">
+                        <div class="img">
+                            <img
+                                src="./img/free-icon-font-settings-sliders-3917103.svg"
+                                alt="#" class="setting__img">
+                        </div>
+                        <div class="setting__title">
+                            <h3 class="setting__h3">Свойства и детали</h3>
+                            <p class="setting__p">Например квадратура, размеры и
+                                т.д.</p>
+                            <p class="setting__return ">Сначала выберите
+                                категорию</p>
+                            <div class="setting__description hidden">
+                                <p class="setting__description-p">Отрасль:</p>
+                                <input type="text"
+                                    class="setting__description-input">
+                                <p class="setting__description-p">Местоположение:</p>
+                                <input type="city"
+                                    class="setting__description-input">
+                                <p class="setting__description-p">Стадия
+                                    проекта:</p>
+                                <input type="text"
+                                    class="setting__description-input">
+                                <p class="setting__description-p">Срок
+                                    реализации:</p>
+                                <input type="month"
+                                    class="setting__description-input">
+                                <p class="setting__description-p">Срок
+                                    окупаемости:</p>
+                                <input type="month"
+                                    class="setting__description-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video__image">
+                            <img src="./img/youtube.svg" alt="#"
+                                class="video__img">
+                        </div>
+                        <input type="url" placeholder="Ссылка на видео"
+                            class="video__url">
+                    </div>
+                    <div class="conteiner__images-loades">
+                        <div class="image__container">
+                            <img src="./img/images.svg"
+                                alt="#" class="image__img">
+                        </div>
+                        <div id="drop-area">
+                            <form class="my-form">
+
+                                <input type="file" id="fileElem" multiple
+                                    accept="image/*"
+                                    onchange="handleFiles(this.files)">
+                                <label class="button" for="fileElem">Загрузите
+                                    картинки</label>
+                            </form>
+                            <progress id="progress-bar" max=100 value=0></progress>
+                            <div id="gallery"></div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <textarea name="text" class="comments__text" cols="30"
+                            rows="10"></textarea>
+                        <div class="comments__cont">
+                            <img src="./img/comment-alt.svg" alt="#" class="
+                                comments__img">
+                            <p class="comments__p">Комментарии разрешены</p>
+                            <input type="checkbox" name="check"
+                                class="comments__checkbox">
+                        </div>
+                    </div>
+                    <button class="button__create">Создать</button>
+                </div>
+            </div>
+        </form>
+        <script src="./js/hidden.js"></script>
+        <script src="./js/imageLoader.js"></script>
+    </body>
+</html>
